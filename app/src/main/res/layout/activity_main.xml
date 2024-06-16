@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/enterYourEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="65dp"
+        android:hint="Email"
+        android:inputType="text"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnRedirect"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="E-MAIL REDIRECT"
+        app:layout_constraintTop_toBottomOf="@id/enterYourEmail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <EditText
+        android:id="@+id/enterYourMessage"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="45dp"
+        android:hint="Enter Text"
+        android:textSize="20sp"
+        android:inputType="text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnRedirect" />
+
+    <Button
+        android:id="@+id/btnSendText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:text="SEND TEXT"
+        app:layout_constraintTop_toBottomOf="@id/enterYourMessage"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
